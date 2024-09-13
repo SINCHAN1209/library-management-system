@@ -1,0 +1,28 @@
+{% extends "index.html" %}
+{% load static %}
+
+{%block main_content %}
+<main role="main">
+    <div class="jumbotron bg-light py-5">
+        <div class="justify-content-center">
+            <h3>Hello Readers</h3>
+            <p>Browse for the largest collection of books in here</p>
+            <a type="button" class="btn btn-primary" href="/books">Find books</a>
+        </div>
+    </div>
+</main>
+<div class="container-fluid bg-light py-3">
+    <div class="row">
+        <div class="col">
+            <p class="fs-3 text-dark">Switch User    ?</p>
+        </div>
+        <div class="col">
+            <a href="/admin" class="btn btn-primary">Admin Login</a>    
+        </div>
+    </div>
+</div>
+<footer class="container-fluid fixed-bottom d-flex justify-content-center align-items-center">
+     <p class="fs-6 text-primary">&copy;Sinchan Chak.</p>
+</footer>
+
+{% endblock %}
